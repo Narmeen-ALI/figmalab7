@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUXE — Modern Fashion, Timeless Confidence</title>
+  <meta name="description" content="Discover LUXE — a curated collection of premium fashion essentials. Timeless silhouettes, modern craftsmanship. Shop Classic Blazers, Summer Dresses, and more." />
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="scroll-patch.css" />
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header" id="site-header">
+    <div class="announcement-bar">
+      <p>Complimentary shipping on orders of $150 or more</p>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+
+        <div class="brand-nav">
+          <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+          <a href="#" class="logo" aria-label="LUXE Home">LUXE</a>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#" class="nav-link active" id="nav-new">New</a></li>
+          <li><a href="#" class="nav-link" id="nav-sale">Sale</a></li>
+          <li><a href="#featured" class="nav-link" id="nav-collections">Collections</a></li>
+          <li><a href="#why-us" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="#newsletter" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+
+        <div class="utility-nav">
+          <button class="icon-btn" id="search-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </button>
+          <button class="icon-btn" id="account-btn" aria-label="Account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <button class="icon-btn cart-btn" id="cart-btn" aria-label="Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-count" id="cart-count">2</span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Mobile overlay nav -->
+    <div class="mobile-overlay" id="mobile-overlay">
+      <button class="close-btn" id="close-btn" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <ul class="mobile-nav-links">
+        <li><a href="#">New</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#featured">Collections</a></li>
+        <li><a href="#why-us">About</a></li>
+        <li><a href="#newsletter">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">The New Season / 2026</p>
+        <h1 class="hero-headline">Discover<br/>Your Unique<br/>Style</h1>
+        <p class="hero-desc">Timeless essentials. Modern silhouettes. Discover thoughtfully curated pieces made to feel uniquely you.</p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn btn-primary" id="hero-shop-btn">Shop Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#featured" class="btn btn-secondary" id="hero-explore-btn">Explore Collection</a>
+        </div>
+        <div class="brand-promise">
+          <span class="promise-rule"></span>
+          <span class="promise-text">Luxe, but better.</span>
+        </div>
+      </div>
+      <div class="hero-editorial">
+        <div class="editorial-img-wrap">
+          <img src="hero.png" alt="Fashion editorial — woman in tailored blazer" class="editorial-img" />
+        </div>
+        <div class="editorial-caption">
+          <span class="caption-name">The Art of Everyday Dressing</span>
+          <span class="caption-edition">01</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FEATURED PRODUCTS ======= -->
+    <section class="featured-products" id="featured">
+      <div class="section-heading">
+        <p class="eyebrow">The Considered Wardrobe</p>
+        <div class="heading-row">
+          <h2 class="section-title">Featured Products</h2>
+          <a href="#" class="collection-link" id="view-all-link">
+            Shop all pieces
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17 17 7M7 7h10v10"/>
+            </svg>
+          </a>
+        </div>
+        <p class="section-desc">The pieces you'll reach for, season after season.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card" id="product-blazer">
+          <div class="product-img-wrap">
+            <img src="blazer.png" alt="Classic Blazer" class="product-img" loading="lazy" />
+            <div class="product-badge">Bestseller</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-name">Classic Blazer</h3>
+              <span class="product-price">$125</span>
+            </div>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">4.8 (48 reviews)</span>
+            </div>
+            <button class="btn btn-cart" id="add-cart-blazer">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" id="product-dress">
+          <div class="product-img-wrap">
+            <img src="dress.png" alt="Summer Dress" class="product-img" loading="lazy" />
+            <div class="product-badge">New Arrival</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-name">Summer Dress</h3>
+              <span class="product-price">$99</span>
+            </div>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">4.8 (38 reviews)</span>
+            </div>
+            <button class="btn btn-cart" id="add-cart-dress">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" id="product-shirt">
+          <div class="product-img-wrap">
+            <img src="shirt.png" alt="Casual Shirt" class="product-img" loading="lazy" />
+            <div class="product-badge">Limited Edition</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-name">Casual Shirt</h3>
+              <span class="product-price">$59</span>
+            </div>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">4.8 (92 reviews)</span>
+            </div>
+            <button class="btn btn-cart" id="add-cart-shirt">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" id="product-handbag">
+          <div class="product-img-wrap">
+            <img src="handbag.png" alt="Premium Handbag" class="product-img" loading="lazy" />
+            <div class="product-badge">The Premium Touch</div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-name">Premium Handbag</h3>
+              <span class="product-price">$159</span>
+            </div>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">4.8 (24 reviews)</span>
+            </div>
+            <button class="btn btn-cart" id="add-cart-handbag">Add to Cart</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======= WHY CHOOSE US ======= -->
+    <section class="why-us" id="why-us">
+      <div class="section-heading centered">
+        <p class="eyebrow">The LUXE Difference</p>
+        <h2 class="section-title">Why Choose Us</h2>
+      </div>
+      <div class="benefits-grid">
+
+        <div class="benefit-card" id="benefit-quality">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Premium Quality</h3>
+          <p class="benefit-desc">Consistently fabrics and exceptional craftsmanship, in every detail.</p>
+        </div>
+
+        <div class="benefit-card" id="benefit-shipping">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Free Shipping</h3>
+          <p class="benefit-desc">Complimentary shipping on all orders of $150 or more.</p>
+        </div>
+
+        <div class="benefit-card" id="benefit-returns">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Easy Returns</h3>
+          <p class="benefit-desc">Find your perfect fit with effortless returns within 30 days.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= NEWSLETTER ======= -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter-inner">
+        <div class="newsletter-copy">
+          <p class="eyebrow">A Little Luxe, in Your Inbox</p>
+          <h2 class="newsletter-title">Stay in Style</h2>
+          <p class="newsletter-desc">Be the first to discover new arrivals, exclusive edits, and style inspiration for your everyday.</p>
+        </div>
+        <div class="newsletter-form-wrap">
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <div class="form-field" id="email-field">
+              <label for="email-input" class="form-label">Email address</label>
+              <div class="input-row">
+                <input
+                  type="email"
+                  id="email-input"
+                  name="email"
+                  class="email-input"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+                <button type="submit" class="btn btn-subscribe" id="subscribe-btn">
+                  Subscribe
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <p class="privacy-note">By submitting, you agree to our <a href="#">Privacy Policy</a>. Unsubscribe anytime.</p>
+            <p class="success-msg" id="success-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <span class="footer-logo">LUXE</span>
+          <p class="footer-desc">Modern fashion. Timeless confidence.<br/>Thoughtfully curated essentials for a wardrobe that's uniquely yours.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" id="social-facebook" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-nav-heading">Explore</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#" id="footer-home">Home</a></li>
+            <li><a href="#" id="footer-shop">Shop</a></li>
+            <li><a href="#featured" id="footer-collections">Collections</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-nav-heading">Client Care</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#" id="footer-about">About</a></li>
+            <li><a href="#newsletter" id="footer-contact">Contact</a></li>
+            <li><a href="#" id="footer-returns">Shipping &amp; returns</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-nav-heading">Get in Touch</h4>
+          <address class="contact-details">
+            <a href="mailto:hello@shopluxe.com" id="footer-email">hello@shopluxe.com</a>
+            <a href="tel:+13105550148" id="footer-phone">+1 (310) 555-0148</a>
+            <span id="footer-address">120 Spring Street, New York, NY</span>
+            <span id="footer-hours">Mon–Fri, 9am–6pm EST</span>
+          </address>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-legal">
+        <p class="copyright" id="copyright">© 2026 LUXE. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#" id="privacy-link">Privacy Policy</a>
+          <a href="#" id="terms-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart toast -->
+  <div class="cart-toast" id="cart-toast" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+    <span id="cart-toast-msg">Added to cart</span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

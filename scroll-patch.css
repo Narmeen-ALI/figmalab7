@@ -1,0 +1,82 @@
+/* LUXE — patch styles (link AFTER style.css) */
+
+/* Smooth-scroll offset for the sticky header (replaces the :target::before hack) */
+html { scroll-padding-top: 130px; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* Product cards: make sure the button is always on top and tappable */
+.product-info { position: relative; z-index: 2; }
+.btn-cart { position: relative; z-index: 3; touch-action: manipulation; }
+.btn-cart.is-added { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
+.product-grid > .product-card { align-self: stretch; }
+
+/* Touch devices: no hover-only controls, no sticky hover jumps */
+@media (hover: none) {
+  .wishlist-btn { opacity: 1; transform: scale(1); }
+  .product-card:hover { transform: none; box-shadow: none; }
+  .product-card:hover .product-img { transform: none; }
+}
+
+/* Keyboard focus */
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--cognac);
+  outline-offset: 3px;
+}
+.input-row:focus-within { border-color: var(--charcoal); }
+
+/* Mobile menu: fully inert while closed */
+.mobile-overlay { visibility: hidden; transition: transform 0.4s var(--ease-out), visibility 0s linear 0.4s; }
+.mobile-overlay.open { visibility: visible; transition: transform 0.4s var(--ease-out), visibility 0s; }
+
+/* Toast with "View cart" action */
+.cart-toast.show { pointer-events: auto; }
+.toast-view-btn {
+  background: none; border: none; color: var(--cognac-lt);
+  font: inherit; font-size: 0.8125rem; text-decoration: underline;
+  cursor: pointer; margin-left: 8px; padding: 4px;
+}
+.toast-view-btn:hover { color: var(--white); }
+
+/* Search bar */
+.search-bar {
+  display: none; background: var(--cream);
+  border-bottom: 1px solid var(--border);
+}
+.search-bar.open { display: block; }
+.search-inner {
+  max-width: 1440px; margin: 0 auto; padding: 12px 64px;
+  display: flex; align-items: center; gap: 12px;
+}
+#search-input {
+  flex: 1; height: 44px; padding: 0 16px; font: inherit; font-size: 0.9375rem;
+  border: 1px solid var(--border); border-radius: 2px; background: var(--white);
+  color: var(--charcoal);
+}
+.search-close {
+  width: 40px; height: 40px; border: none; background: none; cursor: pointer;
+  font-size: 1rem; color: var(--charcoal-lt); border-radius: 50%;
+}
+.search-close:hover { background: var(--cream-mid); }
+.no-results { text-align: center; padding: 40px 0; color: var(--charcoal-lt); }
+.no-results[hidden] { display: none; }
+
+/* Cart drawer extras */
+.btn:disabled { opacity: 0.7; cursor: default; }
+.checkout-btn svg { display: none; }
+
+@media (max-width: 1024px) { .search-inner { padding: 12px 32px; } }
+@media (max-width: 768px) {
+  html { scroll-padding-top: 110px; }
+  .search-inner { padding: 10px 24px; }
+  .cart-panel { width: 100%; }
+  .product-img-wrap { aspect-ratio: 3 / 4; max-height: 420px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; }
+}
